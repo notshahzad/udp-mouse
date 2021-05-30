@@ -1,7 +1,8 @@
 import socket
 import win32api
 
-Ip = input("current ip:")
+Ip = socket.gethostbyname(socket.gethostname())
+print(Ip)
 Port = int(input("port:"))
 
 currentposx, currentposy = win32api.GetCursorPos()
